@@ -1,0 +1,153 @@
+body { /* Default Body Styles */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body.light-mode { /* Light Mode Styles */
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+body.light-mode textarea, body.light-mode .counter { /* Light Mode Textarea and Counter Styles */
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode { /* Dark Mode Styles */
+    background-color: #151515;
+    color: #fff;
+}
+
+body.dark-mode textarea, body.dark-mode .counter { /* Dark Mode Textarea and Counter Styles */
+    background-color: #222222;
+    color: #fff;
+}
+
+.container { /* Container Styles */
+    max-width: 85%;
+    margin: auto;
+}
+
+.container h1 { /* Heading Styles */
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.container h1 sup { /* Heading Superscript Styles */
+    vertical-align: bottom;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container p { /* Paragraph Styles */
+    font-size: 1.3rem;
+}
+
+textarea { /* Textarea Input Styles */
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    resize: none;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.counters { /* Counters Styles */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.counter { /* Counter Styles */
+    width: 23%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.counter span { /* Counter Number Styles */
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.settings-icon { /* Settings Icon Styles */
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+body.light-mode .settings-icon { /* Light Mode Settings Icon Styles */
+    color: #000;
+}
+
+.theme-switch { /* Theme Switch Styles */
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Dark Mode Theme Switch Styles */
+}
+
+body.light-mode .theme-switch { /* Light Mode Theme Switch Styles */
+    background: #ddd;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.theme-switch button { /* Theme Switch Button Styles */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.theme-switch button i { /* Theme Switch Button Icon Styles */
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+body.light-mode footer {
+    color: #000;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .counters { /* Counters Styles */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter { /* Counter Styles */
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

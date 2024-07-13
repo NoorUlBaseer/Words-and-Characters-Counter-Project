@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage-->
+    <title>Tally Words and Characters Counter</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <!-- Heading of the webpage -->
+        <h1>Tally<sup>v2</sup></h1>
+
+        <!-- Paragraphs of the webpage -->
+        <p>Your favorite character counter, with a dark mode!</p>
+        
+        <p>Tally word counter is a free online tool to count the number of characters, words, and paragraphs in your text. Tally can also count the number of digits, spaces, and special characters. Make sure you have the required number of words for your essay or article by counting them instantly.</p>
+        
+        <p>Also, Tally character counter has other themes in the settings, so check them out if you want a different look. Please bookmark this page to use Tally whenever you need.</p>
+
+        <!-- Textarea for input -->
+        <textarea id="textInput" placeholder="The quick brown fox jumps over the lazy dog..."></textarea>
+
+        <!-- Counters for characters, words, sentences, paragraphs, spaces, letters, digits, and special characters -->
+        <div class="counters">
+            <!-- Counter for characters -->
+            <div class="counter">
+                Characters <span id="charCount">-</span>
+            </div>
+
+            <!-- Counter for words -->
+            <div class="counter">
+                Words <span id="wordCount">-</span>
+            </div>
+
+            <!-- Counter for sentences -->
+            <div class="counter">
+                Sentences <span id="sentenceCount">-</span>
+            </div>
+
+            <!-- Counter for paragraphs -->
+            <div class="counter">
+                Paragraphs <span id="paragraphCount">-</span>
+            </div>
+
+            <!-- Counter for spaces -->
+            <div class="counter">
+                Spaces <span id="spaceCount">-</span>
+            </div>
+
+            <!-- Counter for letters -->
+            <div class="counter">
+                Letters <span id="letterCount">-</span>
+            </div>
+
+            <!-- Counter for digits -->
+            <div class="counter">
+                Digits <span id="digitCount">-</span>
+            </div>
+
+            <!-- Counter for special characters -->
+            <div class="counter">
+                Special Characters <span id="specialCharCount">-</span>
+            </div>
+        </div>
+    </div>
+    <!-- Settings menu for theme switch -->
+    <i class="fas fa-cog settings-icon" id="settingsIcon" onclick="toggleSettingsMenu()"></i>
+
+    <!-- Theme switch buttons -->
+    <div class="theme-switch" id="themeSwitch">
+        <button onclick="setTheme('light')"><i class="fas fa-sun"></i> Light Mode</button>
+        <button onclick="setTheme('dark')"><i class="fas fa-moon"></i> Dark Mode</button>
+    </div>
+
+    <!-- Footer of the webpage -->
+    <footer>
+        Design & Coded by Noor Ul Baseer with ❤️
+    </footer>
+
+    <!-- JavaScript for the webpage -->
+    <script src="script.js"></script>
+</body>
+</html>
